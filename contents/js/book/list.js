@@ -21,7 +21,7 @@ var BookList = React.createClass({displayName: 'BookList',
 
     handleListItemClicked: function(id){
         var book = _.find(this.state.data, {id: id})
-        this.refs.bookView.setState({book:book})
+        this.refs.BookView.setState({book:book})
     },
 
     render: function() {
@@ -40,8 +40,8 @@ var BookList = React.createClass({displayName: 'BookList',
                 <div className="bookList six columns">
                     {books}
                 </div>
-                <div className="bookView six columns">
-                    <BookView ref="bookView"/>
+                <div className="BookView six columns">
+                    <BookView ref="BookView"/>
                 </div>
             </div>
         )
